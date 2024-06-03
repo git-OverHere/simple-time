@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Simple NPM use" />
+    <title>Clock</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://requirejs.org/docs/release/2.3.6/minified/require.js"></script>
+    <!--Iconify library to add icons-->
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <!--Use Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rum+Raisin&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="timezone-changer">
+      <div class="container relative">
+        <p class="font-size-25">Change Timezone</p>
+        <button id="search"></button>
+        <ul id="options"></ul>
+        <button class="font-size-25" id="apply">Apply</button>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <p class="gray-color font-size-25" id="userTimezone"></p>
+        <p class="font-size-90" id="userTime"></p>
+        <p class="font-size-25" id="userDate"></p>
+      </div>
+    </section>
+    <section>
+      <div class="container remove-border">
+        <p class="gray-color font-size-20" id="jstTimezone"></p>
+        <p class="font-size-70" id="jstTime"></p>
+        <p class="font-size-20" id="jstDate"></p>
+      </div>
+    </section>
+    <section>
+      <div class="container remove-border">
+        <p class="gray-color font-size-20" id="estTimezone"></p>
+        <p class="font-size-70" id="estTime"></p>
+        <p class="font-size-20" id="estDate"></p>
+      </div>
+    </section>
+    <section>
+      <div class="container remove-border">
+        <p class="gray-color font-size-20" id="pstTimezone"></p>
+        <p class="font-size-70" id="pstTime"></p>
+        <p class="font-size-20" id="pstDate"></p>
+      </div>
+    </section>
+
+    <script src="./scripts/getTime.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

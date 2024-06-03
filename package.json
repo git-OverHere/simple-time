@@ -1,0 +1,16 @@
+{
+  "name": "current_time",
+  "version": "1.0.0",
+  "main": "scripts/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "scripts/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "AGPL-3.0",
+  "description": "",
+  "dependencies": {
+    "dayjs": "^1.11.11"
+  }
+}

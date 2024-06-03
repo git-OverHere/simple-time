@@ -1,0 +1,135 @@
+:root {
+  --color1: #000000;
+  --color2: #7c7c7c;
+  --color3: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.rum-raisin-regular {
+  font-family: "Rum Raisin", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  width: 40%;
+  margin: auto;
+  border: 3px solid var(--color1);
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 15px 0;
+  box-sizing: border-box;
+}
+
+p {
+  text-align: right;
+  margin-right: 25%;
+  font-family: "Rum Raisin", sans-serif;
+}
+
+.relative {
+  position: relative;
+}
+
+#timezone-changer p {
+  text-align: left;
+  margin-left: 25%;
+}
+
+#timezone-changer #search {
+  font-family: "Rum Raisin", sans-serif;
+  font-size: 20px;
+  background: 2px solid var(--color1);
+  box-sizing: border-box;
+  padding: 5px 10px;
+  width: 40%;
+  margin-left: 25%;
+  border-radius: 5px;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+}
+
+#dropdown-icon {
+  position: absolute;
+  top: 8px;
+  right: 15px;
+}
+
+#options {
+  display: none;
+  position: absolute;
+  left: 25%;
+  list-style: none;
+  font-family: "Rum Raisin", sans-serif;
+  font-size: 20px;
+  background-color: var(--color3);
+  min-width: 39%;
+  border-radius: 5px;
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+#options li {
+  padding-left: 10px;
+}
+
+#options li:hover {
+  background-color: var(--color2);
+  color: var(--color3);
+  cursor: pointer;
+}
+
+#apply {
+  font-family: "Rum Raisin", sans-serif;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.gray-color {
+  color: var(--color2);
+}
+
+.font-size-20 {
+  font-size: 20px;
+}
+
+.font-size-25 {
+  font-size: 25px;
+}
+
+.font-size-70 {
+  font-size: 70px;
+}
+
+.font-size-90 {
+  font-size: 90px;
+}
+
+.remove-border {
+  border: none;
+}
+
+@media (max-width: 1500px) {
+  p {
+    margin-right: 10%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+  }
+}
